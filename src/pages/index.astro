@@ -1,37 +1,8 @@
 ---
-const clientName: string = 'Danielson';
-const theCurrentYear: number = new Date().getFullYear();
-
-const user = {
-	name: 'Danielson',
-	age: 22,
-}
-console.log(user.name);
-console.log(user.age);
+import BaseLayout from "../layouts/BaseLayout.astro"
 ---
+<BaseLayout>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{clientName}</title>
-	</head>
-	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<h1>{clientName}</h1>
+	<h1> Homepage </h1>
 
-		<p>EWU is now called Polytechnic Pros</p>
-		<p>The mascot is {user.name} and is {user.age}</p>
-		<p>{user.name} loves food. His favorites are: </p>
-		<ul>
-			<li>Tacos</li>
-			<li>Gorditas</li>
-			<li>Tortas</li>
-		</ul>
-
-		<footer>Copyright {theCurrentYear}</footer>
-	</body>
-</html>
+</BaseLayout>
